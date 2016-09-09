@@ -1,0 +1,24 @@
+---
+
+- name: Install some software
+  hosts: server-name
+  remote_user: user
+  become: yes
+  become_method: sudo
+
+  roles:
+      - common
+      - nginx
+      - mysql
+      - java
+      - php-fpm
+      - postgresql
+      - golang
+      - fluentd
+      - composer
+      - nodejs
+      - tmux
+      - zsh
+      - vim
+      - git
+      - dotfiles
