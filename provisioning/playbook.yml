@@ -1,24 +1,21 @@
 ---
 
-- name: Install some software
-  hosts: server-name
-  remote_user: user
-  become: yes
-  become_method: sudo
+-   
+    name: Install some software for development
+    hosts: vagrants
+    user: vagrant
+    sudo: yes
 
-  roles:
-      - common
-      - nginx
-      - mysql
-      - java
-      - php-fpm
-      - postgresql
-      - golang
-      - fluentd
-      - composer
-      - nodejs
-      - tmux
-      - zsh
-      - vim
-      - git
-      - dotfiles
+    roles:
+        - system
+        - nginx
+        - mysql
+        - java
+        - php
+        - golang
+        - nodejs
+        - tmux
+        - zsh
+        - vim
+        - git
+        - dotfiles
