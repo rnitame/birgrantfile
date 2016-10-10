@@ -1,0 +1,13 @@
+---
+- name: apt-get update before installing
+  apt: update_cache=yes
+
+- name: install essential packages
+  apt: pkg={{ item }} state=present
+  with_items:
+      - curl
+      - wget
+      - nkf
+  
+- name: install git
+  apt: pkg=git-core state=present
