@@ -2,13 +2,12 @@
 Vagrantfile for development on OSX. Provisioning by ansible
 
 ## Included software
-- Ubuntu 16.04 (chef/bento)
-- Git
-- Zsh
+- ubuntu 16.04 (chef/bento)
+- git
+- zsh
 - tmux
-- Nginx
-- MySQL
-- Composer
+- nginx
+- mysql 
 - rnitame/dotfiles
 - riywo/anyenv
 
