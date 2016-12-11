@@ -6,18 +6,34 @@ Vagrantfile for development on OSX. Provisioning by ansible
 - Git
 - Zsh
 - tmux
-- PHP 7
-- Nginx 1.8
-- MySQL 5.6
+- Nginx
+- MySQL
 - Composer
-- Node.js (and Gulp)
-- Java 1.8
-- Golang 1.7
 - rnitame/dotfiles
+- riywo/anyenv
 
 # Requirement
 - VirtualBox
 - Vagrant 1.8
+
+# Attention
+You can use anyenv when install the following
+
+- php
+- node.js
+- java
+- golang
+- ruby
+- perl
+- python
+- lua
+- dlang
+- rlang
+- crystal
+- erlang
+- elixir
+- haskell
+- scala
 
 # Author
 [rnitame](https://github.com/rnitame)
