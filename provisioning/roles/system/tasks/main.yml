@@ -2,6 +2,10 @@
 - name: apt-get update before installing
   apt: update_cache=yes
 
+- name: apt-get upgrade before installing
+  apt: upgrade=all
+  become: yes
+
 - name: install essential packages
   apt: pkg={{ item }} state=present
   with_items:
