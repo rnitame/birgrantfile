@@ -12,8 +12,16 @@ Vagrantfile for development on OSX. Provisioning by ansible
 - riywo/anyenv
 
 # Requirement
-- VirtualBox
-- Vagrant 1.8
+- VirtualBox 5
+- Vagrant 1.9
+
+# Install
+
+```
+$ git clone git@github.com:rnitame/Vagrantfile.git
+$ cd Vagrantfile
+$ vagrant up
+```
 
 # Attention
 You can use anyenv when install the following
