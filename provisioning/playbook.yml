@@ -1,15 +1,13 @@
 ---
-
 -   
     name: Install some software for development
     hosts: vagrants
     user: vagrant
-    sudo: yes
+    become: yes
 
     roles:
         - system
         - nginx
         - mysql
         - dotfiles
-        - composer
         - anyenv
