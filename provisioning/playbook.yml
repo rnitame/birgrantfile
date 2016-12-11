@@ -10,12 +10,6 @@
         - system
         - nginx
         - mysql
-        - java
-        - php
-        - golang
-        - nodejs
-        - tmux
-        - zsh
-        - vim
-        - git
         - dotfiles
+        - composer
+        - anyenv
