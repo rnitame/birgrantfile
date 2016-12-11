@@ -8,6 +8,9 @@
       - curl
       - wget
       - nkf
+      - zsh
+      - vim
+      - tmux
   
 - name: install git
   apt: pkg=git-core state=present
