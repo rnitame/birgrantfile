@@ -3,6 +3,3 @@
     repo: https://github.com/rnitame/dotfiles.git
     dest: ~/dotfiles
 
-- name: install dotfiles
-  // TODO: df_install
-

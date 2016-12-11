@@ -1,0 +1,5 @@
+---
+- name: install anyenv 
+  git: 
+    repo: https://github.com/riywo/anyenv.git
+    dest: ~/.anyenv
