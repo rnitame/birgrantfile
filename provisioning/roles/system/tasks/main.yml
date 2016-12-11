@@ -14,3 +14,6 @@
   
 - name: install git
   apt: pkg=git-core state=present
+
+- name: change default shell to zsh
+  shell: chsh -s $(which zsh)
