@@ -4,6 +4,3 @@
 
 - name: install nodejs
   apt: pkg=nodejs state=present
-
-- name: install npm
-  apt: pkg=npm state=present

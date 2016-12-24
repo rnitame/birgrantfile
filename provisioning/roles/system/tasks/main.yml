@@ -19,6 +19,7 @@
       - zsh
       - vim
       - tmux
+      - build-essential # http://qiita.com/TsutomuNakamura/items/7a8362efefde6bc3c68b#ppa-%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B
   
 - name: install git
   apt: pkg=git-core state=present

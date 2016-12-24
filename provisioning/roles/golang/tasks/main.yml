@@ -1,6 +1,7 @@
 ---
 - name: enable add golang repository
-  shell: sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable
+  shell: add-apt-repository ppa:ubuntu-lxc/lxd-stable
+  become: yes
 
 - name: install golang
   apt: pkg=golang state=present

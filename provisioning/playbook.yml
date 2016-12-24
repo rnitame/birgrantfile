@@ -10,4 +10,7 @@
         - nginx
         - mysql
         - dotfiles
-        - anyenv
+        - golang
+        - java
+        - nodejs
+        - php
