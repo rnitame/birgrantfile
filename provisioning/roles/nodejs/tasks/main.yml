@@ -1,0 +1,9 @@
+---
+- name: enable use nodejs 6
+  shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+- name: install nodejs
+  apt: pkg=nodejs state=present
+
+- name: install npm
+  apt: pkg=npm state=present
