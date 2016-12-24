@@ -2,8 +2,12 @@
 - name: apt-get update before installing
   apt: update_cache=yes
 
+  # upgrade する前にインストールする必要あり
+- name: install aptitude
+  apt: pkg=aptitude
+
 - name: apt-get upgrade before installing
-  apt: upgrade=all
+  apt: upgrade=full
   become: yes
 
 - name: install essential packages
