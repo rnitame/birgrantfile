@@ -9,7 +9,10 @@ Vagrantfile for development on OSX. Provisioning by ansible
 - nginx
 - mysql 
 - rnitame/dotfiles
-- riywo/anyenv
+- php
+- java
+- nodejs (with npm)
+- golang
 
 # Requirement
 - VirtualBox 5
@@ -22,25 +25,6 @@ $ git clone git@github.com:rnitame/Vagrantfile.git
 $ cd Vagrantfile
 $ vagrant up
 ```
-
-# Attention
-You can use anyenv when install the following
-
-- php
-- node.js
-- java
-- golang
-- ruby
-- perl
-- python
-- lua
-- dlang
-- rlang
-- crystal
-- erlang
-- elixir
-- haskell
-- scala
 
 # Author
 [rnitame](https://github.com/rnitame)
