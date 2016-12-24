@@ -1,0 +1,9 @@
+---
+- name: install java packages
+  apt: pkg={{ item }} state=present
+  with_items:
+      - openjdk-8-jdk
+      - openjdk-8-doc
+      - openjdk-8-jre
+      - openjdk-8-jre-headless
+
