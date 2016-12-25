@@ -27,3 +27,7 @@
 - name: change default shell to zsh
   shell: chsh -s $(which zsh)
   become: yes
+
+- name: install lua to vim
+  shell: aptitude install vim-gnome
+  become: yes
