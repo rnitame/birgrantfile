@@ -26,3 +26,4 @@
 
 - name: change default shell to zsh
   shell: chsh -s $(which zsh)
+  become: yes
