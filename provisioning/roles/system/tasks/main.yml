@@ -41,3 +41,7 @@
 - name: install lua to vim
   shell: aptitude install vim-gnome
   become: yes
+
+- name: copy ssh secure key
+  copy: src=~/.ssh/id_rsa
+        dest=~/.ssh/id_rsa
