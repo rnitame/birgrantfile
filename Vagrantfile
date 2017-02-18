@@ -6,7 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # need install vagrant-hostsupdater
     config.vm.hostname = "dev-rnita.me"
 
-    config.vm.synced_folder ".", "/vagrant"
+    config.vm.synced_folder ".", "/home/vagrant"
   
     #Fix for Ansible bug resulting in an encoding error
     ENV['PYTHONIOENCODING'] = "utf-8"
@@ -23,5 +23,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.customize ['modifyvm', :id, '--cableconnected1', 'on']
     end
 
+    config.vm.network :forwarded_port, host: 3000, guest: 3000
+    config.vm.network :forwarded_port, host: 4200, guest: 4200
+    config.vm.network :forwarded_port, host: 3999, guest: 3999
     config.vm.post_up_message = "Provisioning is done! :)"
 end
