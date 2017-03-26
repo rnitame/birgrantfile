@@ -6,7 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # need install vagrant-hostsupdater
     config.vm.hostname = "dev-rnita.me"
 
-    config.vm.synced_folder ".", "/home/vagrant"
+    config.vm.synced_folder "./codes", "/home/vagrant/codes"
   
     #Fix for Ansible bug resulting in an encoding error
     ENV['PYTHONIOENCODING'] = "utf-8"
