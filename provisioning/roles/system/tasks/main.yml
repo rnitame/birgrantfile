@@ -39,7 +39,7 @@
   become: yes
 
 - name: install lua to vim
-  shell: aptitude install vim-gnome
+  shell: aptitude install vim-gnome -y
   become: yes
 
 - name: copy ssh secure key
