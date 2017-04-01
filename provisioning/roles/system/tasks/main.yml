@@ -28,7 +28,10 @@
   become: yes
 
 - name: change timezone
-  shell: ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+  file: 
+    src=/usr/share/zoneinfo/Asia/Tokyo
+    dest=/etc/localtime
+    state=link
   become: yes
 
 - name: install git
@@ -41,7 +44,3 @@
 - name: install lua to vim
   shell: aptitude install vim-gnome -y
   become: yes
-
-- name: copy ssh secure key
-  copy: src=~/.ssh/id_rsa
-        dest=~/.ssh/id_rsa
