@@ -2,11 +2,5 @@
 - name: enable use nodejs 6
   shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-- name: enable use yarn
-  shell: curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-
-- name: install nodejs, yarn
-  apt: pkg={{ item }} state=present
-  with_items:
-      - nodejs
-      - yarn
+- name: install nodejs
+  apt: pkg=nodejs state=present
