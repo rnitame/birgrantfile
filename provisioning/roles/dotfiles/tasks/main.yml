@@ -1,7 +1,7 @@
 - name: Checkout my dotfiles
   git: 
     repo: https://github.com/rnitame/birdots.git
-    dest: ~/birdots
+    dest: /home/vagrant/birdots
 
 - name: install dotfiles
-  shell: cd ~/birdots && bash ./land.sh
+  shell: cd /home/vagrant/birdots && /bin/bash ./land.sh
