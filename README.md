@@ -8,13 +8,13 @@ Vagrantfile for development on OSX. Provisioning by ansible
 - tmux
 - nginx
 - mysql 
-- rnitame/dotfiles
+- rnitame/birdots
 - php
 - java
 - nodejs (with npm)
 - golang
 
-# Software version
+## Software version
 
 ```
 $ php -v
