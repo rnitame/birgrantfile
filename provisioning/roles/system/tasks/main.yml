@@ -38,7 +38,7 @@
   apt: pkg=git-core state=present
 
 - name: change default shell to zsh
-  shell: /usr/bin/chsh -s $(/usr/bin/which zsh)
+  shell: /usr/bin/chsh -s $(/usr/bin/which zsh) vagrant
   become: yes
 
 - name: install lua to vim
