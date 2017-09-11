@@ -28,10 +28,7 @@
   become: yes
 
 - name: change timezone
-  file: 
-    src=/usr/share/zoneinfo/Asia/Tokyo
-    dest=/etc/localtime
-    state=link
+  shell: timedatectl set-timezone Asia/Tokyo
   become: yes
 
 - name: install git
